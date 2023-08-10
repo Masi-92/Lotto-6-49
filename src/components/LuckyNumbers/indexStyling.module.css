@@ -1,0 +1,108 @@
+body{
+background-color:#cce0f0 ;
+ 
+}
+
+ul {
+    display: flex;
+    text-align: center;
+    align-items: center;
+   
+}
+
+
+.ulStaling {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+li {
+    width: 20px;
+    height: 20px;
+    border: 1px solid rgb(88, 237, 239);
+    list-style: none;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin: 10px;
+    box-shadow:   inset 0px 11px 8px -10px #a6a3a3,
+    inset 0px -11px 8px -10px #a6a3a3 ;
+}
+.backColor{
+background-color:rgb(127, 255, 210) ;
+
+}
+
+button{
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    
+}
+
+
+.btn:link,
+.btn:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 15px 40px;
+    display: inline-block;
+    border-radius: 100px;
+    transition: all .2s;
+    position: absolute;
+}
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    color: rgb(11, 126, 233);
+    background-color: #fdbd29;
+
+}
+.btn:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+.btnWhite {
+    background-color: #fff;
+    color: #777;
+}
+.btn::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .4s;
+}
+/* .btnWhite::after {
+    background-color: #fff;
+} */
+.btn:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+}
+
+.btnAnimated {
+    animation: moveInBottom 5s ease-out;
+    animation-fill-mode: backwards;
+}
+
+@keyframes moveInBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
